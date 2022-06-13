@@ -30,7 +30,8 @@ class Task(db.Model):
         # __repr__ to represent itself in the form of a string
         # an alternate return statement would be
         # f"{strings}".
-        # return f"#{self.id} - Task:{self.task_name} | Urgent:{self.is_urgent}"
+        # return f"#{self.id} - Task:{
+        # self.task_name} | Urgent:{self.is_urgent}"
         return "#{0} - Task: {1} | Urgent: {2}".format(
             self.id, self.task_name, self.is_urgent
         )
